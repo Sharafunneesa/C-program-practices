@@ -26,6 +26,6 @@ for(i=0;i<=31;i++)
   else
     printf("0");
 }// after toggling printing binary of that number
-printf("\n");
+printf("\n");//next line
 printf("set pos :%d\n",num);//printing number
 }
