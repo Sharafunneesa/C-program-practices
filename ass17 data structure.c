@@ -139,24 +139,3 @@ int count_node(SLL *headptr)
  printf("the total node is : %d\n",n);
  return n;
 }
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
