@@ -34,26 +34,26 @@ void push( )//definition of push function
   int x;
   
   if(top==size-1)//checking the stack is full or not
-  printf("overflow\n");
+    printf("overflow\n");
   else
   { 
-  printf("enter the element to push\n");
-  scanf("%d",&x);//taking the data 
-  top=top+1;//top incremented
-  stack[top]=x;//data assign to stack
+    printf("enter the element to push\n");
+    scanf("%d",&x);//taking the data 
+    top=top+1;//top incremented
+    stack[top]=x;//data assign to stack
   }
-}
+ }
 
 void pop()//definition fo pop function
 {
  if(top==-1)//checking the stack is empty or not
  {
- printf("stack is underflow\n");
+   printf("stack is underflow\n");
  }
  else// not empty
  {
- printf("poped element is :%d\n",stack[top]);//printing the element
- top=top-1;//decreasing the top value
+   printf("poped element is :%d\n",stack[top]);//printing the element
+   top=top-1;//decreasing the top value
  }
 }
 
@@ -62,13 +62,13 @@ void show()//definition for show function
   int i;
  if(top==-1)//checking if any element is available or not
  {
- printf("stack is underflow\n");
+   printf("stack is underflow\n");
  }
  else
  {
-  printf("the elements in the stack are:");
-  for(i=top;i>=0;i--)
-  printf("%d ",stack[i]);//printing the stack datas
+    printf("the elements in the stack are:");
+    for(i=top;i>=0;i--)
+      printf("%d ",stack[i]);//printing the stack datas
  }
  printf("\n");
 }
