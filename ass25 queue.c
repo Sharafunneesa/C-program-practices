@@ -3,18 +3,18 @@
 #define size 10
 void enqueue();
 void dequeue();
-void show();
+void show();//declaring the every functions
 int queue[size],first=-1,last=-1,y=-1;
 
 void main()
 {
- do
+ do//take for do while loop for continue
  {
   int choice;
   printf("operations of queue\n");
   printf("1)enqueue\n 2)dequeue\n 3)show\n 4)exit\n");
   printf("enter your choice :");
-  scanf("%d",&choice);
+  scanf("%d",&choice);//taking choice from user
    switch(choice)
  {
   case 1:enqueue();
@@ -24,12 +24,12 @@ void main()
   case 3:show();
   break;
   case 4:exit(0);
-  default:printf("enter invalied coice\n");
+  default:printf("enter invalied coice\n");//using switch case calling the functions 
  }
  }while(1);
 }
  
-void enqueue()
+void enqueue()//definition of enqueue
 {
  int x;
  if(last==size-1)
