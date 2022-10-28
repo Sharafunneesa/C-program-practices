@@ -25,7 +25,7 @@ int my_atoi(const char *p)
   break;//or break the loop
  }
  if(p[0]=='-')//again checking the first is -
- n=-n;//if it is the assigning negative simple to answar 
+ n=-n;//if it is the assigning negative symbol to answar 
  return n;//return the converted intiger into main function
 }
  
