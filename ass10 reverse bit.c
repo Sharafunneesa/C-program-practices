@@ -17,14 +17,14 @@ void main()
  {
   if((num&(1<<i)))
     r=r| 1<<((p-1)-i);
- }
+ }//for loop for printing the rverse of the given number
  for(i=0;i<=31;i++)
  {
    if(r&(1<<(31-i)))
      printf("1");
    else
      printf("0");
- }
+ }//then printing the binary of that reverse number
  printf("\n");
- printf("reverse num :%d\n",r);
+ printf("reverse num :%d\n",r);//printing reverse number
 }
