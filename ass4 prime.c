@@ -1,9 +1,9 @@
 #include<stdio.h>
 void main()
 {
- int num,i,j,sum=1,flag=0;
+ int num,i,j,sum=1,flag=0;//declaration of variables
  printf("enter the number to find the prime factor:");
- scanf("%d",&num);
+ scanf("%d",&num);//taking number from user
  printf("prime factors are:");
  for(i=2;i<=num/2;i++)
  {
