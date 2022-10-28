@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-void suppress_in_string(char *,char); 
+void suppress_in_string(char *,char);//declaration of user defined function
 int main()
 {
  char s[50];
