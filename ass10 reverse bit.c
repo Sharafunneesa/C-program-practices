@@ -1,30 +1,30 @@
 #include<stdio.h>
 void main()
 {
- int num,r=0,i,p;//declaration of variables
+ int num,r=0,i,p;                      //declaration of variables
  printf("enter the num :");
- scanf("%d",&num);//taking number from user
+ scanf("%d",&num);                     //taking number from user
  for(i=0;i<=31;i++)
  {
-  if(num & (1<<(31-i)))//checking the given position set or clear
+  if(num & (1<<(31-i)))                //checking the given position set or clear
     printf("1");
   else
     printf("0");
- }//using for loop print the binary of given number
+ }                                     //using for loop print the binary of given number
  printf("\n");
- p=sizeof(num)*8;//
+ p=sizeof(num)*8;
  for(i=0;i<p;i++)
  {
   if((num&(1<<i)))
     r=r| 1<<((p-1)-i);
- }//for loop for printing the rverse of the given number
+ }                                    //for loop for printing the rverse of the given number
  for(i=0;i<=31;i++)
  {
    if(r&(1<<(31-i)))
      printf("1");
    else
      printf("0");
- }//then printing the binary of that reverse number
+ }                                   //then printing the binary of that reverse number
  printf("\n");
- printf("reverse num :%d\n",r);//printing reverse number
+ printf("reverse num :%d\n",r);      //printing reverse number
 }
